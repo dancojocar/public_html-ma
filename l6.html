@@ -1,0 +1,68 @@
+<html>
+<head>
+<title>Synchronizing data</title>
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"/>
+<link rel="stylesheet" type="text/css" href="../global.css">
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-85188810-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</head>
+<body>
+<div class="title">Synchronizing data</div>
+<br/>
+<div class="section">Topics</div>
+<ul>
+	<li><a href="">Web Sockets (client and server)</a>
+	<ul>
+	  <li>Tutorials:
+	  <ul>
+		<li><a href="http://www.kevinhoyt.com/2015/09/16/websocket-on-android/">WebSocket on Android</a></li>
+		<li><a href="https://github.com/square/okhttp/tree/parent-3.4.2/okhttp-ws">OkHttp Web Sockets</li>
+	  </ul>
+	  </li>
+	  <li>API documentation
+	  <ul>
+		<li><a href="https://github.com/square/okhttp/blob/parent-3.4.2/okhttp-ws/src/main/java/okhttp3/ws/WebSocket.java">WebSocket</a></li>
+		<li><a href="https://github.com/square/okhttp/blob/parent-3.4.2/okhttp-ws/src/main/java/okhttp3/ws/WebSocketCall.java">WebSocketCall</a></li>
+		<li><a href="https://github.com/square/okhttp/blob/parent-3.4.2/okhttp-ws/src/main/java/okhttp3/ws/WebSocketListener.java">WebSocketListener</a></li>
+	  </ul>
+	  </li>
+	</ul>
+	</li>
+	<li><a href="">Local synchronization services</a>
+	<ul>
+	  <li>Tutorials:
+	  <ul>
+		<li><a href="https://developer.android.com/guide/topics/providers/content-providers.html">Content Providers</a></li>
+		<li><a href="https://developer.android.com/guide/components/loaders.html">Loaders</a></li>
+	  </ul>
+	  </li>
+	  <li>API documentation
+	  <ul>
+		<li><a href="https://developer.android.com/reference/android/database/Cursor.html">Cursor</a></li>
+		<li><a href="https://developer.android.com/reference/android/content/ContentResolver.html">ContentResolver</a></li>
+		<li><a href="https://developer.android.com/reference/android/content/ContentProvider.html">ContentProvider</a></li>
+		<li><a href="https://developer.android.com/reference/android/app/LoaderManager.html">LoaderManager</a></li>
+		<li><a href="https://developer.android.com/reference/android/content/Loader.html">Loader</a></li>
+	  </ul>
+	  </li>
+	</ul>
+	</li>
+</ul>
+<div class="section">Learning outcomes</div>
+<ul>
+	<li>Use the local storage for storing data fetched from server</li>
+	<li>Allow app to work in offline mode</li>
+	<li>Use HTTP ETag to save bandwidth</li>
+	<li>Use web sockets to notify the clients about server updates</li>
+	<li>Run local sync services for submitting data when entering the online mode</li>
+</ul>
+</body>
+</html>
