@@ -1,0 +1,83 @@
+<html>
+<head>
+    <title>Plan</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" href="/~dan/global.css">
+    <script>
+      (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+          (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+          m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+      })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+      ga('create', 'UA-85188810-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+</head>
+<body>
+<div class="title">Assessment Lab Plan</div>
+<br/>
+<div class="section">L2 (10%) - Due: 10/16 or 10/23 (depending on the lab frequency)</div>
+<ul>
+    <li>Check if each student has a remote git repo that contains at least the Readme.txt file with the app story.</li>
+    <li>Each student will add the lab instructor as a collaborator to his repo.
+        <ul>
+            <li>GitHub user: dancojocar</li>
+            <li>GitHub user: BarabasIstvanAttila</li>
+            <li>GitHub user: KirnerErhard</li>
+        </ul>
+    </li>
+</ul>
+<div class="section">L3 (20%) - Due: 11/10 - Extended Due Date: 70% 11/24, 50% 12/22, 2017</div>
+<ul>
+    <li>At least the following features should be available (both React-Native and Native(Android or iOS)):
+        <ul>
+            <li>The input form, on submit the collected data should be send using an email, eg. with gmail app, using an
+                intent.
+            </li>
+            <li>An activity where a list of items is presented, when selecting an item a new screen will allow the user
+                to view and edit the item details.
+            </li>
+        </ul>
+    </li>
+    <li>No persistence is needed yet.</li>
+</ul>
+<div class="section">L5 (30%) Due: 12/8 - Extended Due Date: 70% 12/22, 50% 01/8 2018</div>
+<ul>
+    <li>Demo the following features:
+        <ul>
+            <li>CRUD user interfaces.</li>
+            <li>Offline support (eg. sync adapters with SQLite or Room or Realm, ...). Persist data on the local storage.</li>
+            <li>Display a chart when presenting item details.</li>
+            <li>Use dialogs and pickers.</li>
+        </ul>
+    </li>
+    <li>Both in React-Native and Android/iOS</li>
+</ul>
+<div class="section">L7 (40%) - Due: 01/{8,9} or 01/{15,16} 2018 (depending on the lab frequency)</div>
+<ul>
+    <li>Demo the final app, that contains everything mentioned above plus the following:
+        <ul>
+            <li>Online support.</li>
+            <li>Implement CRUD REST client operations.</li>
+            <li>Notifications (gcm, ws, etc.)</li>
+            <li>Synchronize the content with a remote location.</li>
+            <li>Authentication (jwt, oauth). The app should support at least two roles. Ie. one kind of users should have access to more/different features then others.</li>
+            <li>Submit data on background threads or/using promises.</li>
+            <li>Navigates between screens/views.</li>
+            <li>Manage the application state outside the user interface layer.</li>
+            <li>Use the observer pattern to notify the user interface about the changes occurred internally.</li>
+            <li>For extra points: Use different layouts, depending on the device size (phone, tablet, etc.).</li>
+        </ul>
+    </li>
+    <li>Both in React-Native and Android/iOS</li>
+</ul>
+</body>
+</html>
