@@ -117,7 +117,7 @@
 <div class="section">Final grade</div>
 <ul>
     <li>MP(L2 - Main Project Grade) = (L2Native + L2Non-native) / 2</li>
-    <li>LG(Laboratory Grade) = if(MP >= 4.5) L1 * 0.1 + MP * 0.6 + L3 * 0.3 else 0</li>
+    <li>LG(Laboratory Grade) = if(MP >= 4.5) min(10, L1 * 0.1 + MP * 0.6 + L3 * 0.3) else 0</li>
     <li>EG(Exam Grade) - the grade from the practical exam</li>
     <li>FG(Final Grade) = if(LG >= 4.5 && EG >= 5 ) LG * 0.6 + EG * 0.4 else 0</li>
     <li>Note: In order to take the practical exam you need to have at least 90% of the laboratory presences.</li>
