@@ -1,6 +1,6 @@
-<html lang="en">
+<html>
 <head>
-  <title>Synchronizing data</title>
+  <title>Coroutines, Flow &amp; Reactive programming</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"/>
   <link rel="stylesheet" type="text/css" href="/~dan/global.css">
   <script>
@@ -22,66 +22,56 @@
   </script>
 </head>
 <body>
-<div class="title">Synchronizing data</div>
+<div class="title">Coroutines, Flow &amp; Reactive programming</div>
 <br/>
 <div class="section">Topics</div>
 <ul>
-  <li><a href="https://developer.android.com/training/sync-adapters/creating-sync-adapter">Sync Adapter</a>
+  <li><a href="https://kotlinlang.org/docs/reference/coroutines-overview.html">Coroutines for asynchronous programming
+    and more</a>
     <ul>
-      <li>API documentation
+      <li>Tutorials:
         <ul>
-          <li>
-            <a href="https://developer.android.com/training/sync-adapters/creating-sync-adapter">Create a
-              sync adapter</a>
-          </li>
+          <li><a href="https://kotlinlang.org/docs/reference/coroutines/basics.html">Basic Syntax</a></li>
+          <li><a href="https://kotlinlang.org/docs/tutorials/coroutines/coroutines-basic-jvm.html">Your first coroutine
+            with Kotlin</a></li>
+          <li><a href="https://kotlinlang.org/docs/tutorials/coroutines/async-programming.html">Asynchronous Programming
+            Techniques</a></li>
+          <li><a href="https://github.com/Kotlin/kotlin-coroutines-examples/tree/master/examples">Coroutines
+            Examples</a></li>
         </ul>
       </li>
     </ul>
   </li>
-  <li><a href="">Web Sockets (client and server)</a>
+  <li><a href="http://reactivex.io/">Rx</a>
     <ul>
       <li>Tutorials:
         <ul>
-          <li><a href="https://www.kevinhoyt.com/2015/09/16/websocket-on-android/">WebSocket on Android</a>
+          <li>
+            <a href="https://code.tutsplus.com/tutorials/getting-started-with-reactivex-on-android--cms-24387">Getting
+              Started With ReactiveX on Android</a>
           </li>
-          <li><a href="https://github.com/square/okhttp/tree/parent-3.4.2/okhttp-ws">OkHttp Web Sockets</a></li>
+          <li>
+            <a href="http://www.vogella.com/tutorials/RxJava/article.html">RxJava 2.0</a>
+          </li>
+          <li>
+            <a href="http://rxmarbles.com/">Rx operators demo</a>
+          </li>
         </ul>
       </li>
       <li>API documentation
         <ul>
           <li>
-            <a href="https://github.com/square/okhttp/blob/parent-3.4.2/okhttp-ws/src/main/java/okhttp3/ws/WebSocket.java">WebSocket</a>
+            <a href="https://github.com/ReactiveX/RxJava/blob/1.x/src/main/java/rx/Observer.java">Observer</a>
           </li>
           <li>
-            <a href="https://github.com/square/okhttp/blob/parent-3.4.2/okhttp-ws/src/main/java/okhttp3/ws/WebSocketCall.java">WebSocketCall</a>
+            <a href="https://github.com/ReactiveX/RxJava/blob/1.x/src/main/java/rx/Observable.java">Observable</a>
           </li>
           <li>
-            <a href="https://github.com/square/okhttp/blob/parent-3.4.2/okhttp-ws/src/main/java/okhttp3/ws/WebSocketListener.java">WebSocketListener</a>
-          </li>
-        </ul>
-      </li>
-    </ul>
-  </li>
-  <li><a href="">Local synchronization services</a>
-    <ul>
-      <li>Tutorials:
-        <ul>
-          <li><a href="https://developer.android.com/guide/topics/providers/content-providers">Content
-            Providers</a></li>
-          <li><a href="https://developer.android.com/guide/components/loaders">Loaders</a></li>
-        </ul>
-      </li>
-      <li>API documentation
-        <ul>
-          <li><a href="https://developer.android.com/reference/android/database/Cursor">Cursor</a></li>
-          <li><a href="https://developer.android.com/reference/android/content/ContentResolver">ContentResolver</a>
-          </li>
-          <li><a href="https://developer.android.com/reference/android/content/ContentProvider">ContentProvider</a>
+            <a href="https://github.com/ReactiveX/RxJava/blob/1.x/src/main/java/rx/schedulers/Schedulers.java">Schedulers</a>
           </li>
           <li>
-            <a href="https://developer.android.com/reference/android/app/LoaderManager">LoaderManager</a>
+            <a href="https://github.com/ReactiveX/RxJava/blob/1.x/src/main/java/rx/Subscription.java">Subscription</a>
           </li>
-          <li><a href="https://developer.android.com/reference/android/content/Loader">Loader</a></li>
         </ul>
       </li>
     </ul>
@@ -89,11 +79,10 @@
 </ul>
 <div class="section">Learning outcomes</div>
 <ul>
-  <li>Use the local storage for storing data fetched from server</li>
-  <li>Allow app to work in offline mode</li>
-  <li>Use HTTP ETag to save bandwidth</li>
-  <li>Use web sockets to notify the clients about server updates</li>
-  <li>Run local sync services for submitting data when entering the online mode</li>
+  <li>Understand the reactive programming (rx) concepts.</li>
+  <li>Use rx to re-write the application logic.</li>
+  <li>Design a real time application logic against a real time backend.</li>
+  <li>Understand coroutines and flow.</li>
 </ul>
 <div class="section">Lecture slides: <a href="Lecture6.pdf">PDF slides</a></div>
 </body>

@@ -1,6 +1,6 @@
 <html>
 <head>
-  <title>Reactive programming &amp; Coroutines</title>
+  <title>System services and sensors</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"/>
   <link rel="stylesheet" type="text/css" href="/~dan/global.css">
   <script>
@@ -22,56 +22,93 @@
   </script>
 </head>
 <body>
-<div class="title">Reactive programming &amp; Coroutines</div>
+<div class="title">System services and sensors</div>
 <br/>
 <div class="section">Topics</div>
 <ul>
-  <li><a href="http://reactivex.io/">Rx</a>
+  <li><a href="https://developer.android.com/guide/components/services">System services and processes</a>
     <ul>
       <li>Tutorials:
         <ul>
-          <li>
-            <a href="https://code.tutsplus.com/tutorials/getting-started-with-reactivex-on-android--cms-24387">Getting
-              Started With ReactiveX on Android</a>
-          </li>
-          <li>
-            <a href="http://www.vogella.com/tutorials/RxJava/article.html">RxJava 2.0</a>
-          </li>
-          <li>
-            <a href="http://rxmarbles.com/">Rx operators demo</a>
+          <li><a href="https://developer.android.com/guide/components/services">Services</a></li>
+          <li><a href="https://developer.android.com/guide/components/processes-and-threads#Processe">Processes</a>
           </li>
         </ul>
       </li>
       <li>API documentation
         <ul>
+          <li><a href="https://developer.android.com/reference/android/app/Service">Service</a></li>
           <li>
-            <a href="https://github.com/ReactiveX/RxJava/blob/1.x/src/main/java/rx/Observer.java">Observer</a>
+            <a href="https://developer.android.com/reference/android/app/IntentService">IntentService</a>
           </li>
           <li>
-            <a href="https://github.com/ReactiveX/RxJava/blob/1.x/src/main/java/rx/Observable.java">Observable</a>
-          </li>
-          <li>
-            <a href="https://github.com/ReactiveX/RxJava/blob/1.x/src/main/java/rx/schedulers/Schedulers.java">Schedulers</a>
-          </li>
-          <li>
-            <a href="https://github.com/ReactiveX/RxJava/blob/1.x/src/main/java/rx/Subscription.java">Subscription</a>
+            <a href="https://developer.android.com/reference/android/app/job/JobScheduler">JobScheduler</a>
           </li>
         </ul>
       </li>
     </ul>
   </li>
-  <li><a href="https://kotlinlang.org/docs/reference/coroutines-overview.html">Coroutines for asynchronous programming
-    and more</a>
+  <li><a href="">Notifications between services and processes</a>
     <ul>
       <li>Tutorials:
         <ul>
-          <li><a href="https://kotlinlang.org/docs/reference/coroutines/basics.html">Basic Syntax</a></li>
-          <li><a href="https://kotlinlang.org/docs/tutorials/coroutines/coroutines-basic-jvm.html">Your first coroutine
-            with Kotlin</a></li>
-          <li><a href="https://kotlinlang.org/docs/tutorials/coroutines/async-programming.html">Asynchronous Programming
-            Techniques</a></li>
-          <li><a href="https://github.com/Kotlin/kotlin-coroutines-examples/tree/master/examples">Coroutines
-            Examples</a></li>
+          <li><a href="https://developer.android.com/guide/components/services#Notifications">Sending
+            notifications to the user</a></li>
+        </ul>
+      </li>
+      <li>API documentation
+        <ul>
+          <li><a href="https://developer.android.com/reference/android/app/job/JobService">JobService</a>
+          </li>
+          <li><a href="https://developer.android.com/reference/android/app/job/JobInfo.Builder">JobInfo.Builder</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><a href="https://developer.android.com/topic/libraries/architecture/workmanager/">Schedule tasks with
+    WorkManager</a>
+    <ul>
+      <li>Tutorials:
+        <ul>
+          <li><a href="https://developer.android.com/topic/libraries/architecture/workmanager/basics">WorkManager
+            basics</a></li>
+          <li><a href="https://developer.android.com/topic/libraries/architecture/workmanager/advanced">Advanced
+            WorkManager topics</a></li>
+        </ul>
+      </li>
+      <li>API documentation
+        <ul>
+          <li><a href="https://developer.android.com/reference/androidx/work/Worker">Worker</a></li>
+          <li><a href="https://developer.android.com/reference/androidx/work/WorkRequest">WorkRequest</a></li>
+          <li><a href="https://developer.android.com/reference/androidx/work/WorkManager">WorkManager</a></li>
+          <li><a href="https://developer.android.com/reference/androidx/work/WorkInfo">WorkInfo</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><a href="https://developer.android.com/guide/topics/sensors/sensors_overview">Sensors</a>
+    <ul>
+      <li>Tutorials:
+        <ul>
+          <li>
+            <a href="https://developer.android.com/guide/topics/sensors/sensors_overview#sensors-intro">Introduction
+              to Sensors</a></li>
+          <li><a href="https://developer.android.com/guide/topics/sensors/sensors_motion">Motion
+            Sensors</a></li>
+          <li><a href="https://developer.android.com/guide/topics/sensors/sensors_position">Position
+            Sensors</a></li>
+          <li><a href="https://developer.android.com/guide/topics/sensors/sensors_environment">Environment
+            Sensors</a></li>
+          <li><a href="http://www.vogella.com/tutorials/AndroidSensor/article.html">Android Sensor</a></li>
+        </ul>
+      </li>
+      <li>API documentation
+        <ul>
+          <li><a href="https://developer.android.com/reference/android/hardware/Sensor">Sensor</a></li>
+          <li>
+            <a href="https://developer.android.com/reference/android/hardware/SensorEvent">SensorEvent</a>
+          </li>
         </ul>
       </li>
     </ul>
@@ -79,10 +116,10 @@
 </ul>
 <div class="section">Learning outcomes</div>
 <ul>
-  <li>Understand the reactive programming (rx) concepts.</li>
-  <li>Use rx to re-write the application logic.</li>
-  <li>Design a real time application logic against a real time backend.</li>
-  <li>Understand coroutines and flow.</li>
+  <li>Use existing system services.</li>
+  <li>Define custom services.</li>
+  <li>Understand the user notifications API.</li>
+  <li>Consume data from sensors.</li>
 </ul>
 <div class="section">Lecture slides: <a href="Lecture7.pdf">PDF slides</a></div>
 </body>
