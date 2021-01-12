@@ -1,6 +1,6 @@
 <html>
 <head>
-  <title>Advanced Mobile Development</title>
+  <title>Testing and Exam Discussions</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"/>
   <link rel="stylesheet" type="text/css" href="/~dan/global.css">
   <script>
@@ -22,28 +22,91 @@
   </script>
 </head>
 <body>
-<div class="title">Advanced Mobile Development</div>
+<div class="title">Testing</div>
 <br/>
-<div class="section">Topics</div>
+<div class="section">Local Unit Tests</div>
 <ul>
-  <li><a href="https://developer.android.com/guide/topics/appwidgets">App Widget</a></li>
-  <li><a href="https://developer.android.com/guide/topics/resources/localization">Localize your app</a></li>
-  <li><a href="https://developer.android.com/guide/topics/ui/accessibility">Build more accessible apps</a></li>
-  <li><a href="https://developer.android.com/guide/topics/ui/accessibility/apps">Make apps more accessible</a></li>
-  <li><a href="https://developer.android.com/topic/performance/rendering/inspect-gpu-rendering">Inspect GPU rendering
-    speed and overdraw</a></li>
-  <li><a href="https://developer.android.com/studio/profile/memory-profiler">View the Java heap and memory allocations
-    with Memory Profiler</a></li>
-  <li><a href="https://developer.android.com/reference/android/databinding/ViewDataBinding">ViewDataBinding</a></li>
+  <li><a href="http://junit.org/junit4">Junit</a>
+    <ul>
+      <li>Resources:
+        <ul>
+          <li><a href="http://junit.org/junit4/">JUnit</a></li>
+          <li><a href="https://github.com/junit-team/junit4/wiki/Getting-started">JUnit Tutorial</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><a href="https://github.com/mockito/mockito">Mockito</a>
+    <ul>
+      <li>Resources:
+        <ul>
+          <li><a href="https://github.com/mockito/mockito">Mockito</a></li>
+          <li><a href="http://www.vogella.com/tutorials/Mockito/article.html">Unit tests with Mockito -
+            Tutorial</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
 </ul>
+<div class="section">Instrumented Tests</div>
+<ul>
+  <li><a href="https://developer.android.com/training/testing/#UIAutomator">UI Automator</a>
+    <ul>
+      <li>Resources:
+        <ul>
+          <li><a href="http://www.vogella.com/tutorials/AndroidTesting/article.html">Developing Android unit
+            and instrumentation tests - Tutorial</a></li>
+          <li><a href="http://bitbar.com/how-to-get-started-with-ui-automator-2-0/">What's new in UIAutomator
+            2.0 and how to get started</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><a href="http://robolectric.org/">Robolectric</a>
+    <ul>
+      <li>Resources:
+        <ul>
+          <li><a href="http://robolectric.org/getting-started/">Getting Started</a></li>
+          <li><a href="https://github.com/robolectric/robolectric-samples">Sample project</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><a href="https://developer.android.com/training/testing/#Espresso">Espresso</a>
+    <ul>
+      <li>Resources:
+        <ul>
+          <li><a href="http://www.vogella.com/tutorials/AndroidTestingEspresso/article.html">Android user
+            interface testing with Espresso - Tutorial</a></li>
+          <li><a href="https://developer.android.com/training/testing/ui-testing/espresso-testing">Testing
+            UI for a Single App</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><a href="https://firebase.google.com/docs/test-lab/">Firebase Test Lab for Android</a>
+    <ul>
+      <li>Resources:
+        <ul>
+          <li><a href="https://firebase.google.com/docs/test-lab/android/android-studio">Firebase Test Lab for Android
+            and Android Studio</a></li>
+          <li><a href="https://firebase.google.com/docs/test-lab/android/robo-ux-test">Firebase Test Lab for Android
+            Robo Test</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
 <div class="section">Learning outcomes</div>
 <ul>
-  <li>Identify app widgets, and understand the key parts of an app widget.</li>
-  <li>Implement app widget actions when an element of an app widget is tapped.</li>
-  <li>Add support for different languages.</li>
-  <li>Test your app for accessibility in a variety of ways.</li>
-  <li>Use the Profile GPU Rendering tool to visualize Android drawing the screen.</li>
-  <li>Use Memory Profiler to collect data about your app.</li>
+  <li>Introduction to the concepts and tools for building Android tests.</li>
+  <li>Build complex unit tests with Android dependencies that cannot be satisfied with mock objects.</li>
+  <li>Create tests to verify that the user interface behaves correctly for user interactions within a single app or
+    for interactions across multiple apps.
+  </li>
+  <li>Verify the behavior of components that users do not directly interact with, such as a Service.</li>
+  <li>Create a stable and reusable testing harness to run performance tests/</li>
 </ul>
 <div class="section">Lecture slides: <a href="Lecture12.pdf">PDF slides</a></div>
 </body>
