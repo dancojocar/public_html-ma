@@ -1,0 +1,88 @@
+can you please adapt the following problem to this format:
+
+====
+Se consideră un număr natural fără cifre egale cu zero, dat prin șirul a (a[1], a[2], ..., a[n]) în care se
+află cele n cifre ale sale (1 ≤ n ≤ 10 la momentul apelului inițial). Precizați care dintre următorii
+algoritmi returnează True dacă un număr dat sub această formă este palindrom și False în caz contrar.
+Un număr este palindrom dacă citit de la stânga la dreapta are aceeași valoare ca atunci când se citește
+de la dreapta la stânga.
+
+A.
+Algorithm palindrom_1(a, n):
+i ← 1
+j ← n
+k ← True
+While (i ≤ j) AND (k = True) execute
+If a[i] = a[j] then
+i ← i + 1
+j ← j - 1
+else
+k ← False
+EndIf
+EndWhile
+return k
+EndAlgorithm
+
+B.
+Algorithm translatare(a, n):
+For i = 1, n - 1 execute
+a[i] ← a[i + 1]
+EndFor
+EndAlgorithm
+Algorithm palindrom_2(a, n):
+j ← n
+If (j = 0) OR (j = 1) then
+return True
+EndIf
+If a[1] = a[j] then
+translatare(a, n)
+return palindrom_2(a, n - 2)
+EndIf
+return False
+EndAlgorithm
+
+C.
+Algorithm palindrom_3(a, n):
+i ← n
+j ← 1
+k ← True
+sum1 ← 0
+sum2 ← 0
+While (i > n DIV 2) AND (j ≤ n DIV 2) execute
+sum1 ← sum1 + a[i]
+sum2 ← sum2 + a[j]
+i ← i - 1
+j ← j + 1
+EndWhile
+If sum1 = sum2 then
+k ← True
+else
+k ← False
+EndIf
+return k
+EndAlgorithm
+
+D.
+Algorithm palindrom_4(a, n):
+i ← 1
+j ← n
+k ← True
+While (i ≤ j) AND (k = True) execute
+If (a[i] = a[j]) AND (i MOD 2 = 0) AND (j MOD 2 = 0) then
+i ← i + 1
+j ← j - 1
+else
+k ← False
+EndIf
+EndWhile
+return k
+EndAlgorithm
+
+====
+to have exactly 4 answers in sudocode and among the answers to have at least one true and one false answers.
+Everything should be in romanian and the options should obey the sudocode from the template.
+For each answer you should show if the answer is correct or not. The problem:
+For each false answer please prepare samples input to demonstrate that it is false.
+
+
+
